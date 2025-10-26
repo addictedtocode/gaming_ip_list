@@ -26,6 +26,9 @@ The curation of the ip4 list is as follows:
 6. The IP column is then extracted from the sorted table, the row header is removed, which yields the *blocklist_ip4_cidr* file.
 7. After each of the duplicate/subnet lines have been removed, the table is resorted based on the original row numbers to achive the original order minus the duplicate/subnet lines.  The row number column is then removed, yielding the final *blocklist_ip4_stats* file.
 
+## Accuracy
+Blocking corporate registered IP blocks is a rather blunt tool.  The blast radius is obviously rather large, but hosts within pertinent proximity are acceptable collateral damage.  For instance, blocking all Valve ip addresses surely prevents reading the "Jobs" page at valvesoftware.com, but this is acceptable given my current goal.  On the upside, this strategy has zero chance of accidentally blocking access to school sites, wikipedia, weather.gov, and other completely unrelated sites.
+
 ## Summary Statistics
 Here are summary statistics of the initial ip4 list derived from *blocklist_ip4_stats*.  This is only for conceptual information.  I do not intend to update this regularly, but I will likely update it if the corporation list changes.
 ```
